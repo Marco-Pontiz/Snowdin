@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
-import CartWidget from './components/CartWidget';
+import ItemListContainer from './container/ItemListContainer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css'
 
@@ -9,6 +9,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <ItemListContainer />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
