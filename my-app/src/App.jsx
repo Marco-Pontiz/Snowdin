@@ -2,28 +2,19 @@ import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
 import ItemListContainer from './container/ItemListContainer';
+import ItemCount from './container/ItemCount';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap-icons/font/bootstrap-icons.css'
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function App() {
+
   return (
     <div className="App">
       <Navbar />
       <ItemListContainer />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Welcome to Snowdin
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <main>
+    <ItemCount/>
+      </main>
     </div>
   );
 }
