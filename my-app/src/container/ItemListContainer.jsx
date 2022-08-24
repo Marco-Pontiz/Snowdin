@@ -1,7 +1,12 @@
+import ItemCount from "./ItemCount";
+
 const ItemListContainer = (greeting) => {
     console.log(greeting);
+    const onAdd = (quantity) => {
+        console.log(`Compraste ${quantity} unidades`);
+    }
     return(
-        <h4 style={{background:'black', color:'white'}}>Contenedores</h4>
+        <ItemCount initial = {1} stock = {5} onAdd = {onAdd}/> 
     )
 }
 

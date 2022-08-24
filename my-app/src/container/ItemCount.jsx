@@ -1,28 +1,27 @@
 import Button from 'react-bootstrap/Button';
-import React,{useState} from 'react';
+import React,{ useState } from 'react';
 
-const ItemCount = () =>{
-    const carrito = []
+const ItemCount = ({initial, stock, onAdd}) =>{
+    const [count, setCount] = useState(initial);
+    const decrease = () => {
+        setCount(count - 1);
+    }
+    const increment = () =>{
+        setCount(count + 1);
+    }
     return(
-    <nav>
-        <div>
-            Cantidad de elementos en el carrito <span>{carrito.length}</span>
-        </div>
-        <div>
-            <h3>Elementos</h3>
-            <Button variant="outline-danger" className='m-1'>-</Button><input className='inp'></input><Button variant="outline-primary" className='m-1'>+</Button>
-        <div className='mt-3'>
-            <Button variant="outline-success" onClick = {() => {
-                carrito.push('Elemento')
-                console.log(carrito);
-            }}>Agregar elemento</Button>
-            <Button variant="outline-danger" onClick = {() => {
-                carrito.pop('Elemento')
-                console.log(carrito);
-            }}>Quitar elemento</Button>
-        </div>
-    </div>
-    </nav>
+        <nav>
+            <div>
+                <h3>Elementos</h3>
+                <h4>Selecione la cantidad de elementos</h4>
+                <Button variant="outline-danger" className='m-1' disabled={count <= 1} onClick={decrease}>-</Button>
+
+                <span>{count}</span>
+
+                <Button variant="outline-primary" className='m-1' disabled={count >= stock} onClick={increment}>+</Button>
+            </div>
+        <Button variant="outline-success" disabled={stock <= 0} onClick={() => onAdd(count)}>Agregar al carrito</Button>
+        </nav>
     )
 }
 
