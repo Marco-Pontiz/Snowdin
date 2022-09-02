@@ -1,8 +1,9 @@
 import { FiShoppingCart } from "../../node_modules/react-icons/fi";
+import '../App.css'; 
 
 const CartWidget = () => {
     return (
-        <a class="nav-link" href="#">Cart<FiShoppingCart /></a>
+        <a className="nav-link" href="#"><FiShoppingCart /></a>
     )
 }
 
