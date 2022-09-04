@@ -1,7 +1,7 @@
 import React,  {useState, useEffect} from 'react';
 import ItemDetail from '../ItemDetail/IndexDetail.jsx';
 
-const Element = { id:1, image:"https://m.media-amazon.com/images/I/41uN5FWDE6L.jpg", title:"Backpack snow Dakine", subtitle:"Waterproof snow backpack, able to carry heavy weights for tools. Ideal for mountain climbing or camping.", price:'£120'};
+const Element = { id:1, image:"https://m.media-amazon.com/images/I/41uN5FWDE6L.jpg", title:"Backpack snow Dakine", subtitle:"Waterproof snow backpack.", price:'£120'};
 
 const ItemDetailContainer = () => {
     const [data, setData] = useState ({});
