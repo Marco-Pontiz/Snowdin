@@ -1,6 +1,5 @@
 import CartWidget from "./CartWidget.jsx";
 import imagenes from "../img/imagenes.jsx";
-import { Snowdin } from "../img/Snowdin.JPG";
 
 const Navbar = () => {
     return(

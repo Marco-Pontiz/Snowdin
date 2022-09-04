@@ -9,6 +9,7 @@ const ItemDetail = ({data}) => {
                 <img className='detail__image' src={data.image} alt="" />
                 <div className='content-between'>
                     <h1>{data.title}</h1>
+                    <h2>{data.price}</h2>
                     <Button variant="success">Buy it</Button>
                 </div>
             </div>

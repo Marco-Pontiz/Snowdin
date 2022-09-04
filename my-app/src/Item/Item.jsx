@@ -1,12 +1,12 @@
 import './Item.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import CardGroup from 'react-bootstrap/CardGroup';
 import React from 'react';
 
 const Item = ({info}) => {
     return(
-            <Card className='etiquet' style={{width: '18rem', border: '1px solid black',}}>
+        <div className="etiquetDivStyle">
+            <Card style={{width: '18rem', border: '1px solid black', margin:'3px'}}>
                 <Card.Img variant='top' className= 'Imag' src={info.image} alt="" />
                 <Card.Title>{info.title}</Card.Title>
                 <Card.Text>{info.subtitle}</Card.Text>
@@ -14,7 +14,8 @@ const Item = ({info}) => {
                     <Button className='buttonCard' variant='warning'>Add to cart</Button>
                 </div>
             </Card>
-    )
+        </div>
+    );
 }
 
 export default Item;
