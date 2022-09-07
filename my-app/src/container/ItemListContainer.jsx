@@ -1,6 +1,7 @@
 import ItemCount from "./ItemCount";
 import ItemList from "../Item/ItemList";
 import React, {useEffect,useState} from 'react'
+import { useParams } from "react-router-dom";
 
 const ItemListContainer = (greeting) => {
 const Elements = [
@@ -9,6 +10,7 @@ const Elements = [
     { id:3, image:"https://www.estiber.com/blog/wp-content/uploads/2019/10/baston-esqui.jpg", title:"Snow Sticks", subtitle:"Perfect ski poles"}
 ]
 const [data, setData] = useState([]);
+const { idProducts } = useParams();
 
     useEffect(() =>{
         const getData = new Promise(resolve => {
