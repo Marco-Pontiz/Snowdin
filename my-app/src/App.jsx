@@ -13,18 +13,20 @@ function App() {
   return (
     <>
     <div className="App">
+
       <BrowserRouter>
         <Navbar />
+        <ControlledCarousel />
         <Routes>
-          <Route path='/' element={<ItemListContainer />} />
-          <Route path='/product/:idProducts' elemente={<ItemListContainer />}/>
+          <Route path='/product' element={<ItemListContainer />}/>
+          <Route path='/product/:idProduct' element={<ItemListContainer />}/>
           <Route path='/category/:idCategory' element={<ItemListContainer />} />
+          <Route path='/detail' element={<ItemDetailContainer />}/>
           <Route path='/cart' element={<CartWidget/>}/>
         </Routes>
+
+
         </BrowserRouter>
-        <ControlledCarousel />
-        <ItemListContainer />
-        <ItemDetailContainer />
     </div>
     </>
   );

@@ -1,9 +1,12 @@
 import { FiShoppingCart } from "../../node_modules/react-icons/fi";
 import '../App.css'; 
+import { NavLink } from "react-router-dom";
 
 const CartWidget = () => {
     return (
-        <a className="nav-link" href="#"><FiShoppingCart /></a>
+        <li>
+        <NavLink className="nav-link" to='cart'><FiShoppingCart /></NavLink>
+        </li>
     )
 }
 

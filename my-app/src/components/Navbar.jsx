@@ -14,10 +14,23 @@ const Navbar = () => {
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav" style={{marginLeft:10}}>
-                <a class="nav-link" aria-current="page">Shop</a>
-                <a class="nav-link" href="#">Winter clothing</a>
-                <a class="nav-link" href="#">Sporting goods</a>
-                <a class="nav-link" href="#">Tools</a>
+
+            <li>
+                <NavLink className="nav-link" aria-current="page" to='/product'>Shop</NavLink>
+            </li>
+
+            <li>
+                <NavLink className="nav-link" to='/detail'>Winter clothing</NavLink>
+            </li>
+
+            <li>
+                <NavLink className="nav-link" to=''>Sporting goods</NavLink>
+            </li>
+
+            <li>
+                <NavLink className="nav-link" to=''>Tools</NavLink>
+            </li>
+
                 <CartWidget />
             </div>
             </div>
