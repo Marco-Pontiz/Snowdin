@@ -13,11 +13,11 @@ const ItemCount = ({initial, stock, onAdd}) =>{
     return(
         <nav>
             <div>
-                <Button variant="outline-danger" className='m-1' disabled={count <= 1} onClick={decrease}>-</Button>
+                <Button variant="outline-warning" className='m-1' disabled={count <= 1} onClick={decrease}>-</Button>
 
                 <span>{count}</span>
 
-                <Button variant="outline-primary" className='m-1' disabled={count >= stock} onClick={increment}>+</Button>
+                <Button variant="outline-warning" className='m-1' disabled={count >= stock} onClick={increment}>+</Button>
             </div>
         <Button className= 'butt' variant="outline-warning" disabled={stock <= 0} onClick={() => onAdd(count)}>Add to cart</Button>
         </nav>
