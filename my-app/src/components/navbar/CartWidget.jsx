@@ -1,5 +1,5 @@
-import { FiShoppingCart } from "../../node_modules/react-icons/fi";
-import '../App.css'; 
+import { FiShoppingCart } from "../../../node_modules/react-icons/fi";
+import '../../App.css'; 
 import { NavLink } from "react-router-dom";
 import React from 'react';
 

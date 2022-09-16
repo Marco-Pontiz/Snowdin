@@ -1,5 +1,5 @@
 import CartWidget from "./CartWidget.jsx";
-import imagenes from "../img/imagenes.jsx";
+import imagenes from "../../img/imagenes.jsx";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
