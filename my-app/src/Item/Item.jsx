@@ -2,6 +2,7 @@ import './Item.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import React, {useContext} from 'react';
+import {Link} from 'react-router-dom'
 
 const Item = ({info}) => {
     return(
@@ -14,6 +15,10 @@ const Item = ({info}) => {
                     <Button className='buttonCard' variant='warning'>Add to cart</Button>
                 </div>
             </Card>
+
+            <Link to={`/product/${info.id}`}>
+                <button>Details</button>
+            </Link>
         </div>
     );
 }

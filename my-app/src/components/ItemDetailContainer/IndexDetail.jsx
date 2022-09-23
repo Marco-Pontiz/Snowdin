@@ -15,16 +15,18 @@ const ItemDetailContainer = () => {
     useEffect(() =>{
         const getData = new Promise(resolve => {
             setTimeout(() => {
-                resolve(Products.find(e=>e.id==idProduct));
+                resolve(Products.find(e => e.id == idProduct));
             }, 3000);
         });
         getData.then(res => setData(res));
+
         if(idProduct){
-            getData.then(res => setData(res.filter(Products => Products.category === idProduct)));
+            getData.then(res => setData(res.find(Prod => Prod.id === idProduct)));
     } else {
         getData.then(res => setData(res));
     }
-    },
+    }, []
+    )
 
     return(
         <ItemDetail data={data} />
