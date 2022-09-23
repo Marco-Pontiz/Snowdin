@@ -8,7 +8,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import CartWidget from './components/navbar/CartWidget';
-import CartProvider from './context/CartContext.jsx'
+import CartProvider from './context/CartContext.jsx';
 
 function App() {
 
@@ -21,11 +21,11 @@ function App() {
         <Navbar />
         <ControlledCarousel />
             <Routes>
-              <Route path='/product' element={<ItemListContainer />}/>
-              <Route path='/product/:idProduct' element={<ItemListContainer />}/>
+              <Route path='/' element={<ItemListContainer />}/>
+              <Route path='/product/:idProduct' element={<ItemDetailContainer />}/>
               <Route path='/category/:idCategory' element={<ItemListContainer />} />
               <Route path='/detail' element={<ItemDetailContainer />}/>
-              <Route path='/cart' element={<CartWidget/>}/>
+              <Route path='/Cart' element={<CartWidget/>}/>
             </Routes>
         </CartProvider>
 
