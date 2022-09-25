@@ -2,7 +2,7 @@ import React from 'react';
 import './itemcart.css';
 import {useCartContext} from '../../context/CartContext'
 
-const Itemcart = ({product}) => {
+const Itemcart = ({ product }) => {
 const {removeProduct} = useCartContext();
     return(
         <div className='itemcart'>
@@ -17,3 +17,5 @@ const {removeProduct} = useCartContext();
         </div>
     )
 }
+
+export default Itemcart

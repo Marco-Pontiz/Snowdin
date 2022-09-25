@@ -14,7 +14,7 @@ const CartProvider = ({children}) => {
 
     console.log('carrito', cart);
 
-    const totalPrice = () => { return cart.reduce((prev, act) => prev * act.price, 0);}
+    const totalPrice = () => { return cart.reduce((prev, act) => prev + act.quantity * act.price, 0);}
     const totalProducts = () => cart.reduce((acumulador, productoActual) => acumulador + productoActual.quantity, 0);
 
     const removeCart = (id) => { return setCart(cart.filter(product => product.id !== id))}

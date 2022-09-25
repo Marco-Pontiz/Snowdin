@@ -7,8 +7,9 @@ import ItemListContainer from './container/ItemListContainer';
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import CartWidget from './components/navbar/CartWidget';
+// import CartWidget from './components/navbar/CartWidget';
 import CartProvider from './context/CartContext.jsx';
+import Cart from './components/Cart/Cart'
 
 function App() {
 
@@ -25,7 +26,7 @@ function App() {
               <Route path='/product/:idProduct' element={<ItemDetailContainer />}/>
               <Route path='/category/:idCategory' element={<ItemListContainer />} />
               <Route path='/detail' element={<ItemDetailContainer />}/>
-              <Route path='/Cart' element={<CartWidget/>}/>
+              <Route path='/Cart' element={<Cart />}/>
             </Routes>
         </CartProvider>
 
