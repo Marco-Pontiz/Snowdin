@@ -10,6 +10,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 // import CartWidget from './components/navbar/CartWidget';
 import CartProvider from './context/CartContext.jsx';
 import Cart from './components/Cart/Cart'
+import './firebase/config';
 
 function App() {
 
