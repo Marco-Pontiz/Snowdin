@@ -11,6 +11,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import CartProvider from './context/CartContext.jsx';
 import Cart from './components/Cart/Cart'
 import './firebase/config';
+import Formu from './components/form/form'
 
 function App() {
 
@@ -28,9 +29,9 @@ function App() {
               <Route path='/category/:idCategory' element={<ItemListContainer />} />
               <Route path='/detail' element={<ItemDetailContainer />}/>
               <Route path='/Cart' element={<Cart />}/>
+              <Route path='/Form' element={<Formu />}/>
             </Routes>
         </CartProvider>
-
         </BrowserRouter>
     </div>
     </>

@@ -1,0 +1,28 @@
+*{
+    margin:0;
+}
+
+.form{
+    width:50%;
+    margin:1rem;
+}
+
+.up-form{
+    display:flex;
+    color:rgb(255,255,255);
+    text-align: start;
+    justify-content: left;
+}
+
+.otherEvent{
+    color:rgb(255,0,0);
+}
+
+.Check{
+    color:rgb(255,255,255);
+    text-align: left;
+}
+
+.button{
+    
+}

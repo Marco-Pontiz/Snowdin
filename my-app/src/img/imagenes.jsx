@@ -1,7 +1,8 @@
 import Snowdin from '../img/Logo-Snowdin2.jpg';
-import Carousel from '../img/carousel1.jpg';
-import Carousel1 from '../img/carousel2.jpg';
-import Carousel2 from '../img/carousel3.jpg';
+import Carousel from '../img/hombre-moto.jpg';
+import Carousel1 from '../img/paisaje.jpg';
+import Carousel2 from '../img/night.jpg';
+
 
 export default {
     'img1': Snowdin,

@@ -7,10 +7,14 @@
 .all-carousel{
   display: flex;
   justify-content: center;
-  margin-top:5%;
-  margin-bottom: 25%;
+  text-align: center;
+  width:50%;
+  margin-top:3%;
+  margin-bottom: 10%;
 }
-
+.clor{
+  color:rgb(255,255,255);
+}
 .navbar{
   background-color: rgb(54,54,54);
 }

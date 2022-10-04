@@ -30,6 +30,9 @@ const Navbar = () => {
             <li>
                 <NavLink className="nav-link" to=''>Tools</NavLink>
             </li>
+            <li>
+                <NavLink className="nav-link" to='/Form'>Form</NavLink>
+            </li>
 
                 <CartWidget />
             </div>
