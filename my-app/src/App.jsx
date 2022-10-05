@@ -1,7 +1,7 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/navbar/Navbar.jsx';
-import ControlledCarousel from './components/navbar/Carousel';
+// import ControlledCarousel from './components/navbar/Carousel';
 import ItemDetailContainer from './components/ItemDetailContainer/IndexDetail.jsx'
 import ItemListContainer from './container/ItemListContainer';
 import React from 'react';
@@ -10,6 +10,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 // import CartWidget from './components/navbar/CartWidget';
 import CartProvider from './context/CartContext.jsx';
 import Cart from './components/Cart/Cart'
+import Footer from './components/navbar/Footer'
 import './firebase/config';
 import Formu from './components/form/form'
 
@@ -22,7 +23,6 @@ function App() {
       <BrowserRouter>
       <CartProvider>
         <Navbar />
-        <ControlledCarousel />
             <Routes>
               <Route path='/' element={<ItemListContainer />}/>
               <Route path='/product/:idProduct' element={<ItemDetailContainer />}/>

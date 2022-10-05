@@ -2,6 +2,7 @@ import ItemList from "../Item/ItemList";
 import React, {useEffect,useState} from 'react'
 import { useParams } from "react-router-dom";
 import { getFirestore, collection, getDocs, query, where } from 'firebase/firestore';
+import ControlledCarousel from "../components/navbar/Carousel";
 
 /*
 const Elements = [
@@ -29,6 +30,7 @@ const ItemListContainer = (greeting) => {
 
     return(
         <>
+            <ControlledCarousel />
             <ItemList data={data}/>
         </>
     )
