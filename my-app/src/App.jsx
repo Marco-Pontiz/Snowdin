@@ -10,9 +10,9 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 // import CartWidget from './components/navbar/CartWidget';
 import CartProvider from './context/CartContext.jsx';
 import Cart from './components/Cart/Cart'
-import Footer from './components/navbar/Footer'
 import './firebase/config';
-import Formu from './components/form/form'
+import Formu from './components/form/form';
+import Footer from './components/navbar/Footer';
 
 function App() {
 
@@ -30,7 +30,9 @@ function App() {
               <Route path='/detail' element={<ItemDetailContainer />}/>
               <Route path='/Cart' element={<Cart />}/>
               <Route path='/Form' element={<Formu />}/>
+              <Route path='/Footer' element={<Footer />}/>
             </Routes>
+            <Footer />
         </CartProvider>
         </BrowserRouter>
     </div>

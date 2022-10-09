@@ -1,36 +1,24 @@
-import { IconName } from "react-icons/fa";
-import React from 'react';
-import { NavLink } from "react-router-dom";
-import './Navbar.css';
+import './Navbar.css'
+import { SiFacebook } from "react-icons/si";
+import { BsInstagram } from "react-icons/bs";
+import { FiTwitter } from "react-icons/fi";
+import { BsWhatsapp } from "react-icons/bs"
 
-
-const Footer = () => {
+const formu = () => {
     return(
         <>
-            <div className='footer'>
-                <div className='footer-content'>
-                <h3>Snowdin</h3>
-                <ul className='socials'>
-                    <li>
-                        <NavLink href='#'><i className="BsFacebook"></i></NavLink>
-                    </li>
-                    <li>
-                        <NavLink href='#'><i className="AiFillTwitterCircle"></i></NavLink>
-                    </li>
-                    <li>
-                        <NavLink href='#'><i className="RiInstagramFill"></i></NavLink>
-                    </li>
-                    <li>
-                        <NavLink href='#'><i className="IoLogoWhatsapp"></i></NavLink>
-                    </li>
-                </ul>
-                <div className='footer-bottom'>
-                    <p>copyright &copy;2022 SnowCompany. designed by <span>Snow</span></p>
-                </div>
-                </div>
+        <div className='footer-letters'>
+        <h4>Contact us</h4>
+            <div className='Iconss'>
+                <li><SiFacebook size='2em'/></li>
+                <li><BsInstagram size='2em'/></li>
+                <li><FiTwitter size='2em' /></li>
+                <li><BsWhatsapp size='2em' /></li>
             </div>
+            <p>We are grateful that you are looking for and investing in this sporting goods retail venture. I hope what we have is what you are looking for.</p>
+        </div>
         </>
     )
 }
 
-export default Footer;
+export default formu
