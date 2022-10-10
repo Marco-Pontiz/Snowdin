@@ -2,7 +2,8 @@ import { addDoc, collection,getFirestore } from 'firebase/firestore';
 import React from 'react'; 
 import {useCartContext} from '../../context/CartContext';
 import {Link} from 'react-router-dom';
-import ItemCart from '../ItemCart/itemcart'
+import ItemCart from '../ItemCart/itemcart';
+import './Cart.css';
 
 const Cart = () => {
     const {cart, totalPrice} = useCartContext();
@@ -39,10 +40,10 @@ const Cart = () => {
             {
                 cart.map(product => <ItemCart key={product.id} product={product} />)
             }
-            <p>
+            <p className='c-p'>
                 total: {totalPrice()}
             </p>
-            <button onClick={handleClick}>Issue purchase</button>
+            <button className='btns' onClick={handleClick}>Issue purchase</button>
         </>
     )
 }

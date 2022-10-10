@@ -5,6 +5,20 @@
     margin:1rem auto;
 }
 
+.btnss{
+    background:rgb(115,117,1);
+    color:black;
+    border:1px solid rgb(255,255,255);
+    color:rgb(255,255,255);
+    padding:0.50em;
+    border-radius: 10%;
+    width:100%;
+}
+
+.c-p{
+    color:rgb(255,255,255);
+}
+
 .itemcart img {
     width: 200px;
     margin-right: 1rem;

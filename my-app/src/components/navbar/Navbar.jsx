@@ -1,5 +1,4 @@
 import CartWidget from "./CartWidget.jsx";
-import imagenes from "../../img/imagenes.jsx";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
@@ -15,22 +14,7 @@ const Navbar = () => {
             <li>
                 <NavLink className="nav-link" aria-current="page" to='/'>Home</NavLink>
             </li>
-
-            <li>
-                <NavLink className="nav-link" aria-current="page" to='/product'>Shop</NavLink>
-            </li>
-
-            <li>
-                <NavLink className="nav-link" to='/detail'>Products details</NavLink>
-            </li>
-
-            <li>
-                <NavLink className="nav-link" to=''>Sporting goods</NavLink>
-            </li>
-
-            <li>
-                <NavLink className="nav-link" to=''>Tools</NavLink>
-            </li>
+            
             <li>
                 <NavLink className="nav-link" to='/Form'>Form</NavLink>
             </li>
