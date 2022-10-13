@@ -12,6 +12,7 @@ import CartProvider from './context/CartContext.jsx';
 import Cart from './components/Cart/Cart'
 import './firebase/config';
 import Formu from './components/form/form';
+import Formbuy from './components/form/Formbuy'
 import Footer from './components/navbar/Footer';
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
               <Route path='/Cart' element={<Cart />}/>
               <Route path='/Form' element={<Formu />}/>
               <Route path='/Footer' element={<Footer />}/>
+              <Route path='/Formbuy' element={<Formbuy />}/>
             </Routes>
             <Footer />
         </CartProvider>

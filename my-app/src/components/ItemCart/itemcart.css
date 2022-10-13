@@ -6,12 +6,12 @@
 }
 
 .btnss{
-    background:rgb(115,117,1);
+    background:rgb(82, 0, 16);
     color:black;
     border:1px solid rgb(255,255,255);
     color:rgb(255,255,255);
     padding:0.50em;
-    border-radius: 10%;
+    border-radius: 5%;
     width:100%;
 }
 

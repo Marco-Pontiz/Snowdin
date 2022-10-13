@@ -19,6 +19,10 @@ const Navbar = () => {
                 <NavLink className="nav-link" to='/Form'>Form</NavLink>
             </li>
 
+            <li>
+                <NavLink className="nav-link" to='/Formbuy'>Formbuy</NavLink>
+            </li>
+
                 <CartWidget />
             </div>
             </div>

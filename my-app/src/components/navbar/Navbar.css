@@ -14,12 +14,13 @@
     height: auto;
     color:rgb(225,225,225);
     background: rgb(0,0,0);
+    border-top:1px solid rgb(255,255,255);
 }
 
 .footer-letters h4{
     display:flex;
     margin:0;
-    padding-top:2em;
+    padding-top:1em;
     margin-top:3rem;
     margin-bottom:3rem;
     justify-content: center;

@@ -3,12 +3,12 @@
 }
 
 .btns{
-    background:rgb(128,0,0);
+    background:rgb(10, 97, 0);
     color:black;
     border:1px solid rgb(255,255,255);
     color:rgb(255,255,255);
     padding:0.50em;
-    border-radius: 10%;
+    border-radius: 5%;
     width:12%;
 }
 

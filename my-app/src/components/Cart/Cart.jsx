@@ -43,7 +43,7 @@ const Cart = () => {
             <p className='c-p'>
                 total: {totalPrice()}
             </p>
-            <button className='btns' onClick={handleClick}>Issue purchase</button>
+            <button className='btns' onClick={handleClick}><Link to='/Formbuy'>Issue purchase</Link></button>
         </>
     )
 }
