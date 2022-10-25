@@ -15,10 +15,6 @@ const Navbar = () => {
                 <NavLink className="nav-link" aria-current="page" to='/'>Home</NavLink>
             </li>
             
-            <li>
-                <NavLink className="nav-link" to='/Form'>Form</NavLink>
-            </li>
-
                 <CartWidget />
             </div>
             </div>

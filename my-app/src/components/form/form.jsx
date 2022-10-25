@@ -1,3 +1,4 @@
+/*
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import './form.css';
@@ -71,3 +72,4 @@ const formu = () => {
         }
 
 export default formu;
+*/
